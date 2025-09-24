@@ -83,6 +83,14 @@ function areDeeplyEqual(o1: JSONValue, o2: JSONValue): boolean {
 
 
 
-<details class="lake-collapse"><summary id="u57d2d181"><span class="ne-text">输入输出示例</span></summary><p id="ub9b8fdc9" class="ne-p"><span class="ne-text">示例 1：</span></p><div class="ne-quote"><p id="u39573ec1" class="ne-p"><span class="ne-text">输入：o1 = {&quot;x&quot;:1,&quot;y&quot;:2}, o2 = {&quot;x&quot;:1,&quot;y&quot;:2}<br /></span><span class="ne-text">输出：true<br /></span><span class="ne-text">输入：键和值完全匹配。</span></p></div><p id="uccbdb070" class="ne-p"><span class="ne-text">示例 2：</span></p><div class="ne-quote"><p id="ucfd0b3ce" class="ne-p"><span class="ne-text">输入：o1 = {&quot;y&quot;:2,&quot;x&quot;:1}, o2 = {&quot;x&quot;:1,&quot;y&quot;:2}<br /></span><span class="ne-text">输出：true<br /></span><span class="ne-text">解释：尽管键的顺序不同，但它们仍然完全匹配。</span></p></div><p id="u913ed99a" class="ne-p"><span class="ne-text">示例 3：</span></p><div class="ne-quote"><p id="u872f3977" class="ne-p"><span class="ne-text">输入：o1 = {&quot;x&quot;:null,&quot;L&quot;:[1,2,3]}, o2 = {&quot;x&quot;:null,&quot;L&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]}<br /></span><span class="ne-text">输出：false<br /></span><span class="ne-text">解释：数字数组不同于字符串数组。</span></p></div><p id="u7a05c9c2" class="ne-p"><span class="ne-text">示例 4：</span></p><div class="ne-quote"><p id="u249fe110" class="ne-p"><span class="ne-text">输入：o1 = true, o2 = false<br /></span><span class="ne-text">输出：false<br /></span><span class="ne-text">解释：true !== false</span></p></div><p id="uaac7d8f9" class="ne-p"><span class="ne-text"></span></p></details>
+<details class="lake-collapse"><summary id="u57d2d181"><em><strong><span class="ne-text">输入输出示例</span></strong></em></summary><p id="ub9b8fdc9" class="ne-p"><span class="ne-text">示例 1：</span></p><pre data-language="plain" id="tqtQq" class="ne-codeblock language-plain"><code>输入：o1 = {&quot;x&quot;:1,&quot;y&quot;:2}, o2 = {&quot;x&quot;:1,&quot;y&quot;:2}
+输出：true
+输入：键和值完全匹配。</code></pre><p id="uccbdb070" class="ne-p"><span class="ne-text">示例 2：</span></p><pre data-language="plain" id="Ku4Gy" class="ne-codeblock language-plain"><code>输入：o1 = {&quot;y&quot;:2,&quot;x&quot;:1}, o2 = {&quot;x&quot;:1,&quot;y&quot;:2}
+输出：true
+解释：尽管键的顺序不同，但它们仍然完全匹配。</code></pre><p id="u913ed99a" class="ne-p"><span class="ne-text">示例 3：</span></p><pre data-language="plain" id="U2TeK" class="ne-codeblock language-plain"><code>输入：o1 = {&quot;x&quot;:null,&quot;L&quot;:[1,2,3]}, o2 = {&quot;x&quot;:null,&quot;L&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]}
+输出：false
+解释：数字数组不同于字符串数组。</code></pre><p id="u7a05c9c2" class="ne-p"><span class="ne-text">示例 4：</span></p><pre data-language="plain" id="WuJOF" class="ne-codeblock language-plain"><code>输入：o1 = true, o2 = false
+输出：false
+解释：true !== false</code></pre><p id="uaac7d8f9" class="ne-p"><span class="ne-text"></span></p></details>
 
 
