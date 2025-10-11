@@ -4,6 +4,23 @@
 
 
 
+<h2 id="EC1bC">题目描述</h2>
+给定一个数组 `functions`，返回一个 promise 对象 `promise`。`functions` 是一个返回多个 promise 对象 `fnPromise` 的函数数组。每个 `fnPromise` 可以被解析（resolved）或拒绝（rejected）。
+
+如果 `fnPromise` 被解析：
+
+ `obj = { status: "fulfilled", value: resolved value}`
+
+如果 `fnPromise` 被拒绝：
+
+`obj = { status: "rejected", reason: 拒绝的原因（捕获的错误消息）}`
+
+该 `promise` 应该返回一个包含这些对象 `obj` 的数组。数组中的每个 `obj` 应该对应原始函数数组中的多个 promise 对象，并保持相同的顺序。
+
+请在不使用内置方法 `Promise.allSettled()` 的情况下实现它。
+
+
+
 ```javascript
 // Promise.allSettled()
 
